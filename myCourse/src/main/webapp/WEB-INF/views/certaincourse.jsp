@@ -22,9 +22,6 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="p-4 pt-5" style="margin-left: auto; margin-right: auto">
 				<table>
-					<tr bgcolor="blue" align="center">
-						<td colspan="6" style="color: white">학기별 수강 내역</td>
-					</tr>
 					<tr align="center" bgcolor="skybule">
 						<td>년도</td>
 						<td>학기</td>

@@ -25,14 +25,13 @@
 					<table class="formtable">
 						<tr>
 							<td class="label">수강년도:</td>
-							<td><sf:input class="control" type="text" path="year" /><br>
+							<td><sf:input class="control" type="text" path="year" value="2021"/><br>
 								<sf:errors path="year" class="" /></td>
 						</tr>
 						<tr>
 							<td class="label">학기:</td>
 							<td><sf:select class="control" type="int" path="semester">
 									<option value="1">1</option>
-									<option value="2">2</option>
 								</sf:select><br> <sf:errors path="semester" class="" /></td>
 						</tr>
 						<tr>
@@ -56,7 +55,7 @@
 						</tr>
 						<tr>
 							<td class="label">학점:</td>
-							<td><sf:input class="control" type="text" path="point" /><br>
+							<td><sf:input class="control" type="text" path="point" value="3"/><br>
 								<sf:errors path="point" class="error" /></td>
 						</tr>
 						<tr>
