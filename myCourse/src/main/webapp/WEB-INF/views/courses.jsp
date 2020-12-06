@@ -39,7 +39,7 @@
 				<c:if test="${course.year < 2021}">
 					<c:set var="totalpoint" value="${totalpoint + course.point}" />
 				</c:if>
-				<c:if test="${course.id ==1}">
+				<c:if test="${status.first}">
 					<c:set var="year" value="${course.year}" />
 					<c:set var="semester" value="${course.semester}" />
 				</c:if>
@@ -60,8 +60,8 @@
 				<tr>
 					<td><c:out value="${course.year}"></c:out></td>
 					<td><c:out value="${course.semester}"></c:out></td>
-					<td><c:out value="${course.point}"></c:out></td>
-					<td><a href="#"></a></td>
+					<td><c:out value="${point}"></c:out></td>
+					<td><a href="${pageContext.request.contextPath}/certaincourse?year=${course.year}&semester=${course.semester}">자세히</a></td>
 					<td></td>
 				</tr>
 			</c:if>
@@ -74,7 +74,6 @@
 			<td></td>
 		</tr>
 	</table>
-	<c:out value="${course}"></c:out>
 
 </div></nav></div>
 	<script
